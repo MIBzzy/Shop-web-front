@@ -1,6 +1,6 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  font: 18px "Century Gothic", Futura, sans-serif;
+  margin: 30px;
 }
 
 ol, ul {
@@ -43,8 +43,30 @@ ol, ul {
 .game {
   display: flex;
   flex-direction: row;
+  margin-left: 200px;
+  margin-top: 200px;
 }
 
 .game-info {
-  margin-left: 20px;
+  margin-left: 40px;
+}
+
+/* 创建三个相等的列，它们彼此相邻浮动 */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* 在列后清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 响应式布局 - 使三列堆叠，而不是在较小的屏幕（宽度为 600 像素或更小）上并排 */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
