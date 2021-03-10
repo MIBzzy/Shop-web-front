@@ -1,5 +1,7 @@
 import React from 'react';
 import MyNav from "./MyNav";
+import RefsForm from "./RefsForm";
+import RefsAndDoM from "./RefsAndDoM";
 
 class App extends React.Component{
     render(){
@@ -13,6 +15,8 @@ class App extends React.Component{
                 <h3>Learn React. </h3>
                 <MyNav nav={ nav1 } title="Learning Guiding"/>
                 <MyNav nav={ nav2 } title="Road Guiding"/>
+                <RefsForm/>
+                <RefsAndDoM/>
             </div>
 
         )

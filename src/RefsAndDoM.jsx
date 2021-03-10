@@ -8,14 +8,14 @@ export default class RefsAndDoM extends React.Component{
     }
 
     componentDidMount() {
-        console.log(this.HelloDiv.current.style.color = 'red');
+        this.HelloDiv.current.style.color = 'red';
     }
 
     render(){
         return(
             <div>
                 Refs and DOM
-                <div>
+                <div ref={ this.HelloDiv }>
                     Hello
                 </div>
             </div>
